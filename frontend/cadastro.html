@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livraria Folha — Cadastrar livro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="brand">Livraria Folha</a>
+      <nav class="main-nav">
+        <a href="index.html">Catálogo</a>
+        <a href="cadastro.html">Cadastrar livro</a>
+        <a href="login.html">Entrar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap page-form">
+    <h1 class="page-title">Cadastrar livro</h1>
+    <p class="page-sub">Os dados ficam salvos no seu navegador e aparecem no catálogo assim que você salvar.</p>
+
+    <form id="form-cadastro" class="form" novalidate>
+
+      <div class="field">
+        <label for="titulo">Título</label>
+        <input type="text" id="titulo" name="titulo" placeholder="Ex: Torto Arado">
+        <span class="field-error" id="erro-titulo"></span>
+      </div>
+
+      <div class="field">
+        <label for="autor">Autor</label>
+        <input type="text" id="autor" name="autor" placeholder="Ex: Itamar Vieira Junior">
+        <span class="field-error" id="erro-autor"></span>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="genero">Gênero</label>
+          <select id="genero" name="genero">
+            <option value="">Selecione</option>
+            <option value="Ficção">Ficção</option>
+            <option value="Clássico">Clássico</option>
+            <option value="Tecnologia">Tecnologia</option>
+            <option value="Poesia">Poesia</option>
+            <option value="Fantasia">Fantasia</option>
+            <option value="História">História</option>
+          </select>
+          <span class="field-error" id="erro-genero"></span>
+        </div>
+
+        <div class="field">
+          <label for="preco">Preço (R$)</label>
+          <input type="number" id="preco" name="preco" min="0" step="0.01" placeholder="0,00">
+          <span class="field-error" id="erro-preco"></span>
+        </div>
+
+        <div class="field">
+          <label for="estoque">Estoque</label>
+          <input type="number" id="estoque" name="estoque" min="0" step="1" placeholder="0">
+          <span class="field-error" id="erro-estoque"></span>
+        </div>
+      </div>
+
+      <p class="form-msg" id="form-msg" hidden></p>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">Salvar livro</button>
+        <a href="index.html" class="btn-secondary">Cancelar</a>
+      </div>
+
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Livraria Folha — projeto de estudo, sistema de cadastro de livros.</p>
+    </div>
+  </footer>
+
+  <script src="livros.js"></script>
+  <script src="validacao.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

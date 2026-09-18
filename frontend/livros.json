@@ -1,0 +1,8 @@
+[
+  { "id": 1, "titulo": "Torto Arado", "autor": "Itamar Vieira Junior", "genero": "Ficção", "preco": 54.90, "estoque": 8 },
+  { "id": 2, "titulo": "Dom Casmurro", "autor": "Machado de Assis", "genero": "Clássico", "preco": 29.90, "estoque": 15 },
+  { "id": 3, "titulo": "Código Limpo", "autor": "Robert C. Martin", "genero": "Tecnologia", "preco": 89.00, "estoque": 3 },
+  { "id": 4, "titulo": "A Rosa do Povo", "autor": "Carlos Drummond de Andrade", "genero": "Poesia", "preco": 42.50, "estoque": 0 },
+  { "id": 5, "titulo": "O Hobbit", "autor": "J.R.R. Tolkien", "genero": "Fantasia", "preco": 64.90, "estoque": 6 },
+  { "id": 6, "titulo": "1808", "autor": "Laurentino Gomes", "genero": "História", "preco": 47.90, "estoque": 11 }
+]

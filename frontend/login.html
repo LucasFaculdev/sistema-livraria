@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Livraria Folha — Catálogo</title>
+  <title>Livraria Folha — Entrar</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -22,30 +22,31 @@
     </div>
   </header>
 
-  <section class="hero">
-    <div class="wrap hero-inner">
-      <p class="hero-eyebrow" id="hero-count">acervo de livros</p>
-      <h1 class="hero-title">Um livro bom<br>não se lê rápido.</h1>
-      <p class="hero-sub">Catálogo simples pra organizar o estoque da livraria — buscar, cadastrar e conferir o que já foi vendido.</p>
-    </div>
-  </section>
+  <main class="wrap page-form page-form--narrow">
+    <h1 class="page-title">Entrar</h1>
+    <p class="page-sub">Área restrita da equipe da livraria. Login só de validação — ainda não há back-end conectado.</p>
 
-  <main class="wrap">
-    <section class="catalog">
-      <div class="catalog-head">
-        <h2>Em estoque</h2>
-        <form class="search-form" id="search-form">
-          <input type="search" id="busca" name="busca" placeholder="Buscar por título ou autor">
-          <button type="submit">Buscar</button>
-        </form>
+    <form id="form-login" class="form" novalidate>
+
+      <div class="field">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="voce@livraria.com">
+        <span class="field-error" id="erro-email"></span>
       </div>
 
-      <p id="empty-msg" class="empty-msg" hidden>Nenhum livro encontrado.</p>
-
-      <div class="book-grid" id="book-grid">
-        <!-- os cards de livro são criados pelo js/livros.js -->
+      <div class="field">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Mínimo 6 caracteres">
+        <span class="field-error" id="erro-senha"></span>
       </div>
-    </section>
+
+      <p class="form-msg" id="form-msg" hidden></p>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">Entrar</button>
+      </div>
+
+    </form>
   </main>
 
   <footer class="site-footer">
@@ -54,7 +55,7 @@
     </div>
   </footer>
 
-  <script src="livros.js"></script>
+  <script src="validacao.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
